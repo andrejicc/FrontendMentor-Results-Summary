@@ -1,0 +1,141 @@
+body{
+  height: 100vh;
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+/* Container */
+.outer{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 420px; 
+}
+/* Left section */
+.left{
+  width: 300px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  border-radius: 25px;
+  background: linear-gradient(360deg, rgb(38, 0, 255), rgb(110, 84, 255));
+}
+.result{
+  display:inline-block;
+  margin-top: 24px;
+  font-weight: 800;
+  color: rgb(175, 175, 175);
+}
+.points{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 18px;
+  background-color: rgba(38, 0, 255, 0.352);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  line-height: 20px;
+}
+.points p{
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 600;
+}
+.max{
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(144, 144, 144);
+}
+.great{
+  font-size: 30px;
+  font-weight: 600;
+}
+.better{
+  margin-top: -10px;
+}
+/* Righ section */
+.right{
+  width: 300px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.summary{
+  font-weight: bold;
+  padding-left: 30px;
+  margin-bottom: 20px
+}
+.grid{
+  display: grid;
+}
+.grid div{
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0 32px 10px 32px;
+  padding-left: 10px;
+
+}
+.grid img,
+.grid p{
+  display: inline-block;
+}
+
+.grid img{
+  align-self: start;
+  margin-bottom: -4px;
+}
+.score,
+.score3,
+.score4{
+  margin-left: 70px;
+}
+.score3 {
+  margin-left: 82px;
+}
+.score4{
+  margin-left: 86px;
+}
+.reaction{
+  color: rgb(165, 42, 42);
+  background-color: rgba(255, 183, 155, 0.15);
+}
+.memory{
+  color: rgb(207, 204, 0);
+  background-color: hsla(52, 100%, 97%, 0.765);
+}
+.verbal{
+  color: rgb(0, 194, 165);
+  background-color: hsla(60, 100%, 97%, 0.429);
+}
+
+.visual{
+  color: hsl(241, 100%, 50%);
+  background-color:hsla(241, 100%, 89%, 0.53) ;
+}
+
+.button{
+  margin-left: 32px;
+  width: 236px;
+  height: 48px;
+  border: none;
+  border-radius: 30px;
+  background-color:  rgb(21, 10, 85);
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover{
+  background: linear-gradient(360deg, rgb(38, 0, 255), rgb(110, 84, 255));
+}
+
+@media(max-width:375px){
+  .outer{
+    display: block;
+  }
+}
